@@ -136,7 +136,8 @@ int main(int argc, char *argv[])
             {
                 // Output
 				strcpy(output,"Account is blocked.\n");
-				sendto(listenfd, output, MAXLINE, 0, (struct sockaddr*)&cliaddr, sizeof(cliaddr)); 
+				sendto(listenfd, output, MAXLINE, 0, (struct sockaddr*)&cliaddr, sizeof(cliaddr));
+				break;
             }
             int attempts = 0;
             while (attempts < 3)
